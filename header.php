@@ -16,9 +16,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
     <!-- Responsive-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
     <!-- fevicon -->
@@ -34,12 +34,8 @@
 </head>
 <!-- body -->
 
-<body <?php body_class();?> class="main-layout">
-    <!-- loader  -->
-    <!-- <div class="loader_bg">
-         <div class="loader"><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/loading.gif" alt="#" /></div>
-      </div> -->
-    <!-- end loader -->
+<body <?php body_class(); ?> class="main-layout">
+   
     <!-- header -->
     <header>
         <!-- header inner -->
@@ -51,7 +47,7 @@
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-                                        <a href="index.php"><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/logo.png" alt="#" /></a>
+                                        <a href="index.php"><img src="http://localhost/wordpress/wp-content/uploads/2021/08/logo.png" alt="#" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -92,11 +88,11 @@
                                 <strong>Free Multipurpose Responsive</strong>
                                 <span>Landing Page 2019</span>
                                 <a href="#">Buy Now</a>
-                            </div>
+                            </div>  
                         </div>
                         <div class="col-md-7 padding_right1">
                             <div class="text-img">
-                                <figure><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/top_img.png" alt="#" /></figure>
+                                <figure><img src="http://localhost/wordpress/wp-content/uploads/2021/08/top_img.png" alt="#" /></figure>
                                 <h3>01</h3>
                             </div>
                         </div>
