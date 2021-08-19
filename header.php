@@ -1,6 +1,6 @@
 <?php header('Content-Type: text/html; charset=ISO-8859-1'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
     <?php wp_head(); ?>
@@ -16,15 +16,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
     <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -34,7 +34,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout">
+<body <?php body_class();?> class="main-layout">
     <!-- loader  -->
     <!-- <div class="loader_bg">
          <div class="loader"><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/loading.gif" alt="#" /></div>
@@ -51,7 +51,7 @@
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-                                        <a href="index.html"><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/logo.png" alt="#" /></a>
+                                        <a href="index.php"><img src="http://10.0.0.30/wordpress/wp-content/uploads/2021/08/logo.png" alt="#" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +64,13 @@
                                 <div class="collapse navbar-collapse" id="navbarsExample04">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"> Home </a>
+                                            <a class="nav-link" href="index.php"> Home </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#about">About</a>
+                                            <a class="nav-link" href="<?php echo site_url('/about-us') ?>">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#contact">Contact us</a>
+                                            <a class="nav-link" href="<?php echo site_url('/contact') ?>">Contact us</a>
                                         </li>
                                     </ul>
                                     <div class="sign_btn"><a href="#">Sign in</a></div>
